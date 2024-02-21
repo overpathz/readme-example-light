@@ -15,6 +15,23 @@ This Java-based web application provides a RESTful API with a focus on security 
   - `util`: Utility classes and common functions.
   - `controller`: REST controllers to handle API requests.
 
+## API Endpoints
+
+Below is a list of available API endpoints with their respective HTTP methods, descriptions, required roles, and parameters.
+
+| Endpoint                     | Method | Description                             | Required Role | Parameters/Body                                    |
+|------------------------------|--------|-----------------------------------------|---------------|----------------------------------------------------|
+| `/api/authenticate`          | POST   | Authenticates user and returns JWT      | None          | `username`, `password`                             |
+| `/api/users`                 | GET    | Retrieves all users                     | Admin         | None                                               |
+| `/api/users/{id}`            | GET    | Retrieves a user by ID                  | Admin/User    | `id`: User ID                                      |
+| `/api/users`                 | POST   | Creates a new user                      | Admin         | User JSON object                                   |
+| `/api/users/{id}`            | PUT    | Updates an existing user                | Admin/User    | `id`: User ID, User JSON object                    |
+| `/api/users/{id}`            | DELETE | Deletes a user                          | Admin         | `id`: User ID                                      |
+| `/api/protected/resource`    | GET    | Accesses a protected resource           | User          | None                                               |
+
+### Parameters and Body Details
+...
+
 ## Getting Started
 
 ### Prerequisites
