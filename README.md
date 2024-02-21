@@ -30,7 +30,7 @@ Below is a list of available API endpoints with their respective HTTP methods, d
 | `/api/protected/resource`    | GET    | Accesses a protected resource           | User          | None                                               |
 
 ### Parameters and Body Details
-...
+*need to use Swagger for this*
 
 ## Getting Started
 
